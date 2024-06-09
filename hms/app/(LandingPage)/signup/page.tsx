@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+// import 'bootstrap-icons/font/bootstrap-icons.css';
 import Link from 'next/link';
 
 const SignUp: React.FC = () => {
@@ -28,16 +28,16 @@ const SignUp: React.FC = () => {
               </h2>
               <div className="flex flex-row gap-6 justify-center">
                 <button className="flex items-center justify-center bg-white py-2 rounded-md w-[40px] border border-[#eeeeee]">
-                  <i className="bi bi-google text-black bg-white"></i>
+                  {/* <i className="bi bi-google text-black bg-white"></i> */}
                 </button>
                 <button className="flex items-center justify-center bg-white py-2 rounded-md w-[40px] border border-[#eeeeee]">
-                  <i className="bi bi-linkedin text-black bg-white"></i>
+                  {/* <i className="bi bi-linkedin text-black bg-white"></i> */}
                 </button>
                 <button className="flex items-center justify-center bg-white py-2 rounded-md w-[40px] border border-[#eeeeee]">
-                  <i className="bi bi-facebook text-black bg-white"></i>
+                  {/* <i className="bi bi-facebook text-black bg-white"></i> */}
                 </button>
                 <button className="flex items-center justify-center bg-white py-2 rounded-md w-[40px] border border-[#eeeeee]">
-                  <i className="bi bi-github text-black bg-white"></i>
+                  {/* <i className="bi bi-github text-black bg-white"></i> */}
                 </button>
               </div>
               <p className="text-gray-500 text-center">

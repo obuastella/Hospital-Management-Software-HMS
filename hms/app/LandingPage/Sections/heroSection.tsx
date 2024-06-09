@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+// import 'bootstrap-icons/font/bootstrap-icons.css';
 import Link from 'next/link';
 import { useInView } from 'react-intersection-observer';
 
@@ -18,20 +18,22 @@ const HeroSection: React.FC = () => {
   });
 
   const divs = [
-    { className: 'top-28 right-0', icon: 'bi-capsule', text: 'Medicine' },
+    { className: 'top-28 right-0',
+      // icon: 'bi-capsule', 
+      text: 'Medicine' },
     {
       className: 'bottom-56 left-0',
-      icon: 'bi-chat-dots-fill',
+      // icon: 'bi-chat-dots-fill',
       text: '24/7 Consultation',
     },
     {
       className: 'bottom-28 right-24',
-      icon: 'bi-file-medical-fill',
+      // icon: 'bi-file-medical-fill',
       text: 'Electronic',
     },
     {
       className: 'top-32 left-24',
-      icon: 'bi-hospital-fill',
+      // icon: 'bi-hospital-fill',
       text: '25 Clinic Locations',
     },
   ];
