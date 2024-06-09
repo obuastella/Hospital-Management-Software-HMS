@@ -26,8 +26,8 @@ const SideBar = () => {
       <Box mb={2}>
         <Typography variant="h6">Quote of the Day</Typography>
         <Typography variant="body2">
-          "Let thy food be thy medicine and thy medicine be thy food." -
-          Hippocrates
+          &quot;Let thy food be thy medicine and thy medicine be thy food.&quot;
+          - Hippocrates
         </Typography>
       </Box>
       <Box>
