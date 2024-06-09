@@ -62,7 +62,6 @@ export default function page() {
                         <h2 className="font-bold text-xl text-black">ECG Data</h2>
                         {/* ecg data */}
                         <div className="w-full h-[200px] border-2">
-
                         </div>
                     </section>
                 </main>
