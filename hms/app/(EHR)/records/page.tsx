@@ -7,7 +7,12 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator,
   } from "@/components/ui/breadcrumb"
+import AreaChartComponent from "@/components/ui/charts/AreaChartComponent";
+import BarChartComponent from "@/components/ui/charts/BarChartComponent";
+import LineChartComponent from "@/components/ui/charts/LineChartComponent";
+import Line from "@/components/ui/charts/renderLinehart";
 import Image from "next/image"
+// import { LineChart } from "recharts/chart/LineChart";
 export default function page() {
     return(
         <main>
@@ -53,16 +58,20 @@ export default function page() {
                         </div>
                     </section>
                     {/* charts */}
-                    <section className="mt-10 w-[98%] border-2 h-[400px] flex flex-col gap-y-6 md:flex-row justify-between items-center">
-                        <div className="w-full md:w-[48%] h-[300px] border-2 border-primary"></div>
-                        <div className="w-full md:w-[48%] h-[300px] border-2 border-primary"></div>
+                    <section className="mt-10 w-[98%] shadow rounded-md p-5 flex flex-col gap-y-6 md:flex-row justify-between items-center">
+                        <div className="w-full md:w-[48%]   flex justify-center items-center">
+                            <AreaChartComponent/>
+                        </div>
+                        <div className="w-full md:w-[48%] flex justify-center items-center">
+                            <BarChartComponent/>
+                        </div>
                     </section>
                     {/* ecg chart */}
-                    <section className="w-[98%] border-2 mt-10">
+                    <section className="w-[98%] mt-10 shadow p-4">
                         <h2 className="font-bold text-xl text-black">ECG Data</h2>
                         {/* ecg data */}
-                        <div className="w-full h-[200px] border-2">
-
+                        <div className="w-full p-4 flex justify-center items-center">
+                            <LineChartComponent/>
                         </div>
                     </section>
                 </main>
