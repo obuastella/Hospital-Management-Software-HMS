@@ -3,45 +3,21 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useInView } from 'react-intersection-observer';
 import { ClipboardPlus, Hospital, MessageCircleMore, Pill } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
   const [animatedText, setAnimatedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentDiv, setCurrentDiv] = useState(0);
-  const { ref: firstRef, inView: isFirstInView } = useInView({
-    triggerOnce: true,
-  });
-  const { ref: secondRef, inView: isSecondInView } = useInView({
-    triggerOnce: true,
-  });
 
   const divs = [
-    { className: 'top-28 right-0',
-      icon: <Pill />, 
-      text: 'Medicine' },
-    {
-      className: 'bottom-56 left-0',
-      icon: <MessageCircleMore />,
-      text: '24/7 Consultation',
-    },
-    {
-      className: 'bottom-28 right-24',
-      icon: <ClipboardPlus />,
-      text: 'Electronic',
-    },
-    {
-      className: 'top-32 left-24',
-      icon: <Hospital />,
-      text: '25 Clinic Locations',
-    },
+    { className: 'top-28 right-0', icon: <Pill />, text: 'Medicine' },
+    { className: 'bottom-56 left-0', icon: <MessageCircleMore />, text: '24/7 Consultation' },
+    { className: 'bottom-28 right-24', icon: <ClipboardPlus />, text: 'Electronic' },
+    { className: 'top-32 left-24', icon: <Hospital />, text: '25 Clinic Locations' },
   ];
 
-  const texts = useMemo(
-    () => ['Health', 'Medicine', 'Wellness', 'Fitness', 'Nutrition'],
-    []
-  );
+  const texts = useMemo(() => ['Health', 'Medicine', 'Wellness', 'Fitness', 'Nutrition'], []);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -93,12 +69,7 @@ const HeroSection: React.FC = () => {
   return (
     <section className="bg-[#E6E4E5] py-12">
       <div className="container mx-auto px-16 flex flex-col md:flex-row items-center h-[100vh]">
-        <div
-          ref={firstRef}
-          className={`first md:w-1/2 mb-8 md:mb-0 h-[600px] pt-20 ${
-            isFirstInView ? 'slide-in-left' : ''
-          }`}
-        >
+        <div className="first md:w-1/2 mb-8 md:mb-0 h-[600px] pt-20 slide-in-left">
           <div className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 pl-10">
             <h2 className="mb-4 text-gray-500 text-[70px]">Where</h2>
             <h2 className="mb-4 text-gray-500 text-[70px]">Tech Meets</h2>
@@ -121,12 +92,7 @@ const HeroSection: React.FC = () => {
             </button>
           </Link>
         </div>
-        <div
-          ref={secondRef}
-          className={`second md:w-1/2 relative ${
-            isSecondInView ? 'slide-in-right' : ''
-          }`}
-        >
+        <div className="second md:w-1/2 relative slide-in-right">
           <Image
             src="/images/nurse.gif"
             alt="Nurse"
@@ -143,9 +109,7 @@ const HeroSection: React.FC = () => {
           {divs.map((div, index) => (
             <div
               key={index}
-              className={`absolute ${
-                div.className
-              } bg-[#E6E4E5] p-3 border-[2px] border-white rounded-[50px] flex items-center space-x-2 blink-animation transition-all duration-1000 ${
+              className={`absolute ${div.className} bg-[#E6E4E5] p-3 border-[2px] border-white rounded-[50px] flex items-center space-x-2 blink-animation transition-all duration-1000 ${
                 currentDiv === index ? 'fade-in' : 'fade-out'
               }`}
             >
