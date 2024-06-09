@@ -2,9 +2,9 @@
 
 import React, { useEffect, useState, useMemo } from 'react';
 import Image from 'next/image';
-// import 'bootstrap-icons/font/bootstrap-icons.css';
 import Link from 'next/link';
 import { useInView } from 'react-intersection-observer';
+import { ClipboardPlus, Hospital, MessageCircleMore, Pill } from 'lucide-react';
 
 const HeroSection: React.FC = () => {
   const [animatedText, setAnimatedText] = useState('');
@@ -19,21 +19,21 @@ const HeroSection: React.FC = () => {
 
   const divs = [
     { className: 'top-28 right-0',
-      // icon: 'bi-capsule', 
+      icon: <Pill />, 
       text: 'Medicine' },
     {
       className: 'bottom-56 left-0',
-      // icon: 'bi-chat-dots-fill',
+      icon: <MessageCircleMore />,
       text: '24/7 Consultation',
     },
     {
       className: 'bottom-28 right-24',
-      // icon: 'bi-file-medical-fill',
+      icon: <ClipboardPlus />,
       text: 'Electronic',
     },
     {
       className: 'top-32 left-24',
-      // icon: 'bi-hospital-fill',
+      icon: <Hospital />,
       text: '25 Clinic Locations',
     },
   ];
