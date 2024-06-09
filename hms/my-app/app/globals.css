@@ -18,7 +18,6 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* You can change the background color here and remove this comment */
   background: linear-gradient(
       to bottom,
       transparent,
