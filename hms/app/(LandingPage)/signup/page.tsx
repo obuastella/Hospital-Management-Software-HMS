@@ -4,7 +4,7 @@ import React from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Link from 'next/link';
 
-const page: React.FC = () => {
+const SignUp: React.FC = () => {
   return (
     <div className="bg-gradient-animation bg-gradient-to-r from-white to-[#10555a] flex items-center justify-center min-h-screen">
       <div className="bg-[#32b2bd] w-[840px] h-[600px] rounded-[20px] border-[2px] border-black border-opacity-30 shadow-md">
@@ -114,4 +114,4 @@ const page: React.FC = () => {
   );
 };
 
-export default page;
+export default SignUp;

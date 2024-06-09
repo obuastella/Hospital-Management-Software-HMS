@@ -3,7 +3,7 @@
 import React from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-const page: React.FC = () => {
+const SignIn: React.FC = () => {
   const handleSignInClick = () => {
     window.history.back();
   };
@@ -111,4 +111,4 @@ const page: React.FC = () => {
   );
 };
 
-export default page;
+export default SignIn;
