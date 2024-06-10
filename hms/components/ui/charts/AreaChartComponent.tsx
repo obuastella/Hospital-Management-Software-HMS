@@ -14,34 +14,34 @@ import {
 
 const productSales = [
   {
-    name: 'Jan',
-    product1: 4000,
-    product2: 2400,
+    name: '',
+    BloodPressure: 4000,
+    HeartRate: 2400,
   },
   {
-    name: 'Feb',
-    product1: 3000,
-    product2: 2210,
+    name: '',
+    BloodPressure: 3000,
+    HeartRate: 2210,
   },
   {
-    name: 'Mar',
-    product1: 2000,
-    product2: 2290,
+    name: '',
+    BloodPressure: 2000,
+    HeartRate: 2290,
   },
   {
-    name: 'Apr',
-    product1: 2780,
-    product2: 2000,
+    name: '',
+    BloodPressure: 2780,
+    HeartRate: 2000,
   },
   {
-    name: 'May',
-    product1: 1890,
-    product2: 2181,
+    name: '',
+    BloodPressure: 1890,
+    HeartRate: 2181,
   },
   {
-    name: 'Jun',
-    product1: 2390,
-    product2: 2500,
+    name: '',
+    BloodPressure: 2390,
+    HeartRate: 2500,
   },
 ];
 
@@ -63,17 +63,17 @@ const AreaChartComponent = () => {
 
         <Area
           type="monotone"
-          dataKey="product1"
+          dataKey="BloodPressure"
           stroke="#2563eb"
-          fill="#3b82f6"
+          fill="#FF3333"
           stackId="1"
         />
 
         <Area
           type="monotone"
-          dataKey="product2"
+          dataKey="HeartRate"
           stroke="#7c3aed"
-          fill="#8b5cf6"
+          fill="#87CEFA"
           stackId="1"
         />
       </AreaChart>
@@ -89,12 +89,12 @@ const CustomTooltip: React.FC<CustomTooltipProps> = ({ active, payload, label })
       <div className="p-4 bg-slate-900 flex flex-col gap-4 rounded-md">
         <p className="text-medium text-lg">{label}</p>
         <p className="text-sm text-blue-400">
-          Product 1:
-          <span className="ml-2">${payload[0].value}</span>
+          Blood Pressure:
+          <span className="ml-2">{payload[0].value}</span>
         </p>
-        <p className="text-sm text-indigo-400">
-          Product 2:
-          <span className="ml-2">${payload[1].value}</span>
+        <p className="text-sm text-red-400">
+          Heart Rate:
+          <span className="ml-2">{payload[1].value}</span>
         </p>
       </div>
     );

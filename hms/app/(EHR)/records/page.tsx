@@ -12,7 +12,6 @@ import BarChartComponent from "@/components/ui/charts/BarChartComponent";
 import LineChartComponent from "@/components/ui/charts/LineChartComponent";
 import Line from "@/components/ui/charts/renderLinehart";
 import Image from "next/image"
-// import { LineChart } from "recharts/chart/LineChart";
 export default function page() {
     return(
         <main>
@@ -59,18 +58,20 @@ export default function page() {
                     </section>
                     {/* charts */}
                     <section className="mt-10 w-[98%] shadow rounded-md p-5 flex flex-col gap-y-6 md:flex-row justify-between items-center">
-                        <div className="w-full md:w-[48%]   flex justify-center items-center">
+                        <div className="w-full md:w-[48%] h-80 flex-col flex justify-center items-center">
+                        <h2 className="font-bold text-xl my-4">Vital Signs</h2>
                             <AreaChartComponent/>
                         </div>
-                        <div className="w-full md:w-[48%] flex justify-center items-center">
+                        <div className="w-full md:w-[48%] h-80 flex flex-col justify-center items-center">
+                        <h2 className="font-bold text-xl my-4">Medication Adherence</h2>
                             <BarChartComponent/>
                         </div>
                     </section>
                     {/* ecg chart */}
-                    <section className="w-[98%] mt-10 shadow p-4">
-                        <h2 className="font-bold text-xl text-black">ECG Data</h2>
+                    <section className="w-[98%] mt-10 shadow md:p-4">
+                        <h2 className="font-bold text-xl text-black">Lab Result Trends</h2>
                         {/* ecg data */}
-                        <div className="w-full p-4 flex justify-center items-center">
+                        <div className="w-full h-60 p-4 flex justify-center items-center">
                             <LineChartComponent/>
                         </div>
                     </section>

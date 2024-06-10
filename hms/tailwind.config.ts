@@ -22,6 +22,7 @@ const config = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      
       colors: {
         primary: "#063b3f",
         border: "hsl(var(--border))",
