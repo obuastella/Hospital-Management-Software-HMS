@@ -1,36 +1,12 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Image from 'next/image';
 
 const SecondSection: React.FC = () => {
   return (
-    <div className="bg-[#E6E4E5 ] py-12">
+    <div className="bg-[#E6E4E5] pt-24 pb-28 ">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
-        <div className="md:w-1/2 mb-8 md:mb-0">
-          <div className="relative h-[700px]">
-            <Image
-              src="/images/consultant.jpg"
-              alt="Doctor"
-              width={700}
-              height={700}
-              className="w-full h-[650px]"
-            />
-            <div className="absolute top-2 left-2 bg-white p-4 rounded-lg shadow-md">
-              <p>Member Asked</p>
-              <p className="text-sm">Added Thursday at 1:00 PM</p>
-            </div>
-            <div className="absolute bottom-2 left-2 bg-white p-4 rounded-lg shadow-md">
-              <p>Doctors Note</p>
-              <p className="text-sm">Added Thursday at 1:00 PM</p>
-            </div>
-            <div className="absolute top-2 right-2 bg-white p-4 rounded-lg shadow-md">
-              <p>Excellent</p>
-              <p className="text-sm">98%</p>
-            </div>
-            <div className="absolute bottom-2 right-2 bg-white p-4 rounded-lg shadow-md">
-              <p>Feel Support Always</p>
-            </div>
-          </div>
-        </div>
+        
         <div className="md:w-1/2 pl-8">
           <h2 className="text-3xl font-bold text-gray-800">
             Top-Quality Virtual Primary Care Visits
@@ -69,9 +45,44 @@ const SecondSection: React.FC = () => {
             </li>
           </ul>
         </div>
+
+        <div className="md:w-1/2 mb-8 md:mb-0">
+          <div className="relative h-[700px]">
+            <Image
+              src="/images/consultant.jpg"
+              alt="Doctor"
+              width={700}
+              height={700}
+              className="w-full h-[650px] p-12"
+              style={{
+                borderTopLeftRadius: '200px',
+                borderBottomRightRadius: '200px',
+                borderBottomLeftRadius: '200px',
+                borderTopRightRadius: '200px',
+              }}
+            />
+            <div className="absolute top-4 left-2 bg-white p-4 rounded-lg shadow-md">
+              <p>Member Asked</p>
+              <p className="text-sm">Added Thursday at 1:00 PM</p>
+            </div>
+            <div className="absolute bottom-16 left-2 bg-white p-4 rounded-lg shadow-md">
+              <p>Doctor's Note</p>
+              <p className="text-sm">Added Thursday at 1:00 PM</p>
+            </div>
+            <div className="absolute top-2 right-2 bg-white p-4 rounded-lg shadow-md">
+              <p>Excellent</p>
+              <p className="text-sm">98%</p>
+            </div>
+            <div className="absolute bottom-12 right-2 bg-white p-4 rounded-lg shadow-md">
+              <p>Feel Support Always</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default SecondSection;
+
+
