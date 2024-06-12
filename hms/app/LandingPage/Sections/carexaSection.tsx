@@ -8,7 +8,7 @@ const CarexaSection: React.FC = () => {
     <div className="bg-[#045357] pt-28 pb-28">
       <div className=" w-[400px] ml-40">
         <h2 className="text-4xl font-bold text-white">
-          Discover <span className="text-green-400 underline">Carexa</span>
+          Explore <span className="text-green-400 underline">Carexa</span>
         </h2>
         <p className="mt-2 text-gray-300">
           Carexa is your personal health advisor who can help you discover new
