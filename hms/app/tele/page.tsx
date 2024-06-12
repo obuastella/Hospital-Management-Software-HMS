@@ -44,7 +44,7 @@ const TelemedicineSetup = () => {
       name: "Dr. Obua Stella",
       specialty: "Neuro Surgeon",
       rating: 5.0,
-      image: "/profilePic6.jpg",
+      image: "/profilePic2.jpg",
     },
     {
       name: "Dr. Omojola Zion",
@@ -62,7 +62,7 @@ const TelemedicineSetup = () => {
       name: "Dr. Omojola Zion",
       specialty: "Neuro Surgeon",
       rating: 5.0,
-      image: "/profilePic2.jpg",
+      image: "/profilePic.jpg",
     },
   ];
 
@@ -250,7 +250,7 @@ const TelemedicineSetup = () => {
                         {doctor.name}
                       </h3>
                       <p className="text-[#004d40]">{doctor.specialty}</p>
-                      <p className="text-yellow-500">{doctor.rating} ★</p>
+                      <p className="text-yellow-500">{doctor.rating} ★★★★★</p>
                     </div>
                   </a>
                 </Link>
