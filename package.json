@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "@mui/material": "^5.15.19",
     "bootstrap-icons": "^1.11.3",
     "lucide-react": "^0.390.0",
