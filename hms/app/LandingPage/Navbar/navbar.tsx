@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav
       className={`bg-[#E6E4E5] fixed top-0 w-full h-[80px] flex items-center ${
         scrolled ? 'shadow-lg' : ''
-      } z-[1]`}
+      } z-[1000]`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="flex items-center justify-between h-16">
