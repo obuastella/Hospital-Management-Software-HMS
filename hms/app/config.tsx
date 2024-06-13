@@ -1,6 +1,6 @@
-import { usePathname } from 'next/navigation';
+import { usePathname } from "next/navigation";
 
-import { Calendar, Home, LogOut, Phone, Settings, User } from 'lucide-react';
+import { Calendar, Home, LogOut, Phone, Settings, User } from "lucide-react";
 export const NavItems = () => {
   const pathname = usePathname();
 
@@ -9,39 +9,39 @@ export const NavItems = () => {
   }
   return [
     {
-      name: 'Dashboard',
-      href: '/records',
+      name: "Dashboard",
+      href: "/records",
       icon: <Home size={20} />,
-      active: pathname === '/records',
-      position: 'top',
+      active: pathname === "/records",
+      position: "top",
     },
     {
-      name: 'Patient',
-      href: '/patients',
+      name: "Profile",
+      href: "/userprofile",
       icon: <User size={20} />,
-      active: isNavItemActive(pathname, '/patient'),
-      position: 'top',
+      active: isNavItemActive(pathname, "/userprofile"),
+      position: "top",
     },
     {
-      name: 'Appointments',
-      href: '/appointments',
-      icon: <Calendar size={20}/>,
-      active: isNavItemActive(pathname, '/appointment'),
-      position: 'top',
+      name: "Appointments",
+      href: "/appointments",
+      icon: <Calendar size={20} />,
+      active: isNavItemActive(pathname, "/appointment"),
+      position: "top",
     },
     {
-      name: 'Support',
-      href: '/contactus',
+      name: "Support",
+      href: "/contactus",
       icon: <Phone size={20} />,
-      active: isNavItemActive(pathname, '/contactus'),
-      position: 'top',
+      active: isNavItemActive(pathname, "/contactus"),
+      position: "top",
     },
     {
-      name: 'Logout',
-      href: '/',
+      name: "Logout",
+      href: "/",
       icon: <LogOut size={20} />,
-      active: isNavItemActive(pathname, '/logout'),
-      position: 'bottom',
+      active: isNavItemActive(pathname, "/logout"),
+      position: "bottom",
     },
   ];
 };
