@@ -30,7 +30,7 @@ const stepsData = [
   { name: "Steps Remaining", value: 3000 },
 ];
 
-const Page = () => {
+export default function Page() {
   const [date, setDate] = useState<Date | undefined>(new Date());
   const [isDataSharingAccepted, setIsDataSharingAccepted] = useState(false);
   const [userStatus] = useState("Healthy"); // Example status
@@ -184,6 +184,4 @@ const Page = () => {
       </Layout>
     </main>
   );
-};
-
-export default Page;
+}
