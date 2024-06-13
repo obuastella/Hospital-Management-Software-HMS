@@ -3,15 +3,15 @@ import React from 'react';
 const FourthSection: React.FC = () => {
   return (
     <div className="p-8 font-sans pt-24 pb-24">
-      <div className="text-center mb-16 flex flex-row gap-[200px] items-center justify-center border border-red-500">
+      <div className="text-center mb-16 flex flex-row gap-[200px] items-center justify-center ">
         <div>
-          <h1 className="text-3xl font-bold border border-red-500 w-[350px]">
+          <h1 className="text-3xl font-bold w-[350px]">
             We Make It <span className="text-green-700">Easy</span> By Keeping
             Things Simple
           </h1>
         </div>
         <div>
-          <p className="mt-4 text-gray-600 border border-red-500 w-[520px] justify">
+          <p className="mt-4 text-gray-600 w-[520px] justify">
             Our Approach Is To Demystify Medical Information, Streamline
             Processes, And Prioritize Clear Communication. Whether You’re
             Seeking Information, Scheduling Appointments, Or Accessing Care.
