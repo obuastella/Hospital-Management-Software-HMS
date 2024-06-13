@@ -35,7 +35,7 @@ const FourthSection: React.FC = () => {
         </div>
         <div className="bg-gray-100 p-6 rounded-lg text-center relative flex-1">
           <div className="text-4xl mb-4">💡</div>
-          <h2 className="text-xl font-semibold mb-2">
+          <h2 className="text-3xl font-semibold mb-2">
             Professional{' '}
             <span className="text-blue-500">Mental Health Consultation</span>{' '}
             for Everyone
