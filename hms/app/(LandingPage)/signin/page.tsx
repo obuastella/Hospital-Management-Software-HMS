@@ -1,11 +1,17 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 
 const SignIn: React.FC = () => {
   const handleSignInClick = () => {
-    window.history.back();
+    if (typeof window !== "undefined") {
+      window.history.back();
+    }
   };
+
+  useEffect(() => {
+    // Any other client-side code can go here
+  }, []);
 
   return (
     <div className="bg-gradient-animation bg-gradient-to-r from-white to-[#063B3F] flex items-center justify-center min-h-screen p-4">
